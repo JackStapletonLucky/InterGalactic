@@ -1,2 +1,3 @@
-Ide kerülnek a kliens oldali kódok.
+Ide kerülnek a kliens oldali kódok. ReactJS használatával.
+
 
