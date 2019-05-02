@@ -1,17 +1,22 @@
 import React from "react";
-import { render } from "react-dom";
-import Planet from "./Planet";
+import {render} from "react-dom";
+import PlanetList from "./PlanetList";
+import PlanetDetail from "./PlanetDetail";
+import {Link, Router} from "@reach/router";
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>InterGalactic</h1>
-                <Planet name="Föld" weight="5,9736x1024 kg " moons="1 (a Hold)" />
-                <Planet name="Vénusz" weight="4,8685×1024 kg (a földi 0,815-szerese)" moons="-" />
-                <Planet name="Mars" weight="6,4185·1023 kg (a földi 0,107-szerese)" moons="2" />
+                <header>
+                    <Link to="/">InterGalactic</Link>
+                </header>
+                <Router>
+                    <PlanetList path="/" />
+                    <PlanetDetail path="/details/:id" />
+                </Router>
             </div>
-        );
+        )
     }
 }
 
