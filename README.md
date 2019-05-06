@@ -2,6 +2,8 @@
 
 All about astronomy
 
+Demo: http://195.199.139.68/
+
 Magyar leírás:
 Minden ami csillagászat.
 
