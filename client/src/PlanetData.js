@@ -2,8 +2,72 @@ class PlanetData {
     static basicData = {
         intergalactic: {
             planets: {
-                planet: [{
-                    id: 1, name: 'Föld', weight: "5,9736x1024 kg", moons: "1 (a Hold)"
+                planet: [
+                    {
+                        id: 1, name: 'Merkúr', weight: "3,302×1023 kg (a földi 0,055-szerese)", moons: "-",
+                        description: "" +
+                            "A Merkúr a Naprendszer legbelső és legkisebb bolygója,[8] a Nap körüli keringési ideje 88 " +
+                            "nap. A Merkúr a Földről nézve fényesnek látszik, magnitúdója −2,0 és 5,5 között változik, " +
+                            "azonban nehéz észlelni, mert a Földről nézve a Naptól mérhető legnagyobb szögtávolsága csak" +
+                            " 28,3°. Reggel vagy este szürkületkor lehet megfigyelni. A bolygóról viszonylag keveset " +
+                            "tudunk." +
+                            "\n\nFrom Wikipedia"
+                        , media: {
+                            photos: {
+                                photo: [{
+                                    value: "https://upload.wikimedia.org/wikipedia/commons/5/53/Mercury_in_color_c1000_700_430.png",
+                                    "@size": "pn"
+                                }, {
+                                    value: "https://live.staticflickr.com/8374/8497942353_f0756442f5_b.jpg",
+                                    "@size": "pn"
+                                }, {
+                                    value: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Mercury_Mariner10.jpg",
+                                    "@size": "pn",
+                                }, {
+                                    value: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mercury_transit_1.jpg",
+                                    "@size": "pn"
+                                }, {
+                                    value: "https://upload.wikimedia.org/wikipedia/commons/c/cd/%C3%89gitestek.jpg",
+                                    "@size": "pn"
+                                }]
+                            }
+                        }
+                        , axialTilt: "~2,11°", surfaceGravity: "3,701 m/s² (0,377 g)"
+                    }, {
+                        id: 2, name: 'Vénusz', weight: "4,8685×1024 kg (a földi 0,815-szerese)", moons: "-",
+                        description: "" +
+                            "A Vénusz a második bolygó a Naptól, keringési ideje 224,7 földi nap. Nevét Venusról, a " +
+                            "szépség római istennőjéről kapta. A Hold után a legfényesebb objektum az éjszakai égbolton, " +
+                            "legnagyobb látszólagos fényessége -4,6 magnitúdó. Maximális fényességénél még nappal is " +
+                            "észrevehető. Mivel a Vénusz közelebb van a Naphoz, mint a Föld, és kering körülötte, ezért " +
+                            "néhány hónapig a Naptól keletre, később néhány hónapig a Naptól nyugatra látható, változó " +
+                            "távolságra. A keringés mindkét szélső pontjának látszólagos távolsága a Naptól, azaz a bolygó " +
+                            "legnagyobb kitérése 47,8°, vagyis a Napot legfeljebb három órával követi, illetve előzi meg az " +
+                            "égen." +
+                            "\n\nFrom Wikipedia"
+                        , media: {
+                            photos: {
+                                photo: [{
+                                    value: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg",
+                                    "@size": "pn"
+                                }, {
+                                    value: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Venuspioneeruv.jpg",
+                                    "@size": "pn"
+                                }, {
+                                    value: "https://upload.wikimedia.org/wikipedia/commons/3/3b/MESSENGER_-_Venus_630_nm_stretch.jpg",
+                                    "@size": "pn",
+                                }, {
+                                    value: "https://photojournal.jpl.nasa.gov/jpeg/PIA00072.jpg",
+                                    "@size": "pn"
+                                }, {
+                                    value: "https://live.staticflickr.com/4610/27840499219_1548cc0cbb_b.jpg",
+                                    "@size": "pn"
+                                }]
+                            }
+                        }
+                        , axialTilt: "2,64°", surfaceGravity: "8,87 m/s² (0,904 g)"
+                    }, {
+                    id: 3, name: 'Föld', weight: "5,9736x1024 kg", moons: "1 (a Hold)"
                     , description: "" +
                         "A Föld (görögül: Γαῖα – Gaia, latinul: Terra) a Naptól számított harmadik bolygó a Naprendszerben. " +
                         "A legnagyobb átmérőjű, tömegű és sűrűségű az ismert Föld-típusú bolygók közül.\n" +
@@ -41,32 +105,13 @@ class PlanetData {
                     }
                     , axialTilt: "23,439281°", surfaceGravity: "9,7801 m/s² (0,99732 g)"
                 }, {
-                    id: 2, name: 'Vénusz', weight: "4,8685×1024 kg (a földi 0,815-szerese)", moons: "-",
-                    description: "From Wikipedia"
-                    , media: {
-                        photos: {
-                            photo: [{
-                                value: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg",
-                                "@size": "pn"
-                            }, {
-                                value: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Venuspioneeruv.jpg",
-                                "@size": "pn"
-                            }, {
-                                value: "https://upload.wikimedia.org/wikipedia/commons/3/3b/MESSENGER_-_Venus_630_nm_stretch.jpg",
-                                "@size": "pn",
-                            }, {
-                                value: "https://photojournal.jpl.nasa.gov/jpeg/PIA00072.jpg",
-                                "@size": "pn"
-                            }, {
-                                value: "https://live.staticflickr.com/4610/27840499219_1548cc0cbb_b.jpg",
-                                "@size": "pn"
-                            }]
-                        }
-                    }
-                    , axialTilt: "2,64°", surfaceGravity: "8,87 m/s² (0,904 g)"
-                }, {
-                    id: 3, name: 'Mars', weight: "6,4185·1023 kg (a földi 0,107-szerese)", moons: "2",
-                    description: "From Wikipedia"
+                    id: 4, name: 'Mars', weight: "6,4185·1023 kg (a földi 0,107-szerese)", moons: "2",
+                    description: "" +
+                        "A Mars a Naptól számított negyedik bolygó a Naprendszerben. Szabad szemmel is könnyedén" +
+                        " látható az éjszakai égbolton. A római hadistenről nevezték el, de gyakran hívják „vörös " +
+                        "bolygónak” is színe miatt, amit a Mars felszínét meghatározó vas-oxid okoz. A Mars a " +
+                        "harmadik legnagyobb kőzetbolygó, számos rendkívüli felszíni képződménnyel.\n" +
+                        "\n\nFrom Wikipedia"
                     , media: {
                         photos: {
                             photo: [{
